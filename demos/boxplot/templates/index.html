@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<!--<script src="http://cdn.zingchart.com/zingchart.min.js"></script>-->
+	<script src="http://cdn.zingchart.com/zingchart.min.js"></script>
+	<script src="/cdn/zingchart-angularjs-mod.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script>
+		zingchart.MODULESDIR = "http://cdn.zingchart.com/modules/";
+	</script>
+	<title> Box plot
+	</title>
+</head>
+
+<body ng-app="zingchart-angularjs">
+	<div>
+		<zingchart id="chart-1" zc-height="600" zc-width="600" zc-url="'/boxplot/sepal length (cm)'"></zingchart>
+	</div>
+</body>
+
+</html>
