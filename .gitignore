@@ -58,3 +58,5 @@ target/
 /.idea
 /demos/data/.~lock.iris.csv#
 /demos/pyzingchart
+/demos/drilldown/.idea
+/demos/scatterplot/.idea

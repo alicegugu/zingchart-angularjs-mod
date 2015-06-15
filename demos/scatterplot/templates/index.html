@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<!--<script src="http://cdn.zingchart.com/zingchart.min.js"></script>-->
+	<script src="http://cdn.zingchart.com/zingchart.min.js"></script>
+	<script src="/cdn/zingchart-angularjs-mod.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script>
+		zingchart.MODULESDIR = "http://cdn.zingchart.com/modules/";
+	</script>
+	<title> Scatter plot
+	</title>
+</head>
+
+<body ng-app="zingchart-angularjs">
+	<div>
+		<zingchart id="chart-1" zc-height="600" zc-width="600" zc-url="'/scatterplot?xname=sepal%20length%20(cm)&yname=sepal%20width%20(cm)'"></zingchart>
+		<zingchart id="chart-2" zc-height="600" zc-width="600"
+				   zc-url="'/scatterplot?groupby=flower_type&xname=sepal%20length%20(cm)&yname=sepal%20width%20(cm)&plot_options=%7B%27title%27%3A%7B%27text%27%3A%27iris%20data%27%7D%7D'"></zingchart>
+	</div>
+</body>
+
+</html>
